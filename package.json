@@ -1,0 +1,35 @@
+{
+	"name": "@formidablejs/formidablejs",
+	"version": "0.0.1-rc1",
+	"description": "Imba Framework for Rapid API Development",
+	"license": "MIT",
+	"author": "Donald Pakkies <donaldpakkies@gmail.com>",
+	"scripts": {
+		"start": "craftsman serve",
+		"start:dev": "craftsman serve --dev",
+		"start:dev:test": "craftsman serve --dev --test",
+		"cache": "craftsman cache",
+		"build": "craftsman build",
+		"build:test": "craftsman build --test",
+		"test": "jest --roots=test",
+		"test:api": "jest --roots=test --detectOpenHandles",
+		"test:watch": "jest --watchAll --roots=test --findRelatedTests=bootstrap/compiled/server.cli.js",
+		"test:watch:api": "jest --watchAll --roots=test --findRelatedTests=bootstrap/compiled/server.cli.js --detectOpenHandles"
+	},
+	"dependencies": {
+		"@formidablejs/craftsman": "file:../craftsman",
+		"@formidablejs/framework": "file:../framework",
+		"@formidablejs/helpers": "^0.0.1-rc1",
+		"@formidablejs/schema-builder": "^0.0.1-rc2",
+		"@formidablejs/stubs": "^0.0.1-rc2",
+		"db-migrate-mysql": "^2.1.2",
+		"imba": "^2.0.0-alpha.165",
+		"ms": "^2.1.2"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.24",
+		"@types/node": "^15.12.2",
+		"jest": "^27.0.6",
+		"supertest": "^6.1.5"
+	}
+}

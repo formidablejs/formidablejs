@@ -1,0 +1,8 @@
+/node_modules
+/storage/sessions/*.json
+.env
+.env.backup
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
