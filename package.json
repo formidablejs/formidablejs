@@ -19,6 +19,7 @@
 	"dependencies": {
 		"@formidablejs/framework": "^0.0.1-rc2",
 		"@formidablejs/helpers": "^0.0.1-rc1",
+		"@formidablejs/mailer": "^0.0.1-rc1",
 		"@formidablejs/schema-builder": "^0.0.1-rc2",
 		"@formidablejs/stubs": "^0.0.1-rc2",
 		"db-migrate-mysql": "^2.1.2",
