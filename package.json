@@ -17,6 +17,7 @@
 		"test:watch:api": "jest --watchAll --roots=test --findRelatedTests=bootstrap/compiled/server.cli.js --detectOpenHandles"
 	},
 	"dependencies": {
+		"@formidablejs/craftsman": "^0.0.1-rc1",
 		"@formidablejs/framework": "^0.0.1-rc3",
 		"@formidablejs/helpers": "^0.0.1-rc1",
 		"@formidablejs/mailer": "^0.0.1-rc1",
