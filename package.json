@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"@formidablejs/craftsman": "^0.0.1-rc3",
-		"@formidablejs/framework": "^0.0.1-rc9",
+		"@formidablejs/framework": "^0.0.1-rc10",
 		"@formidablejs/helpers": "^0.0.1-rc1",
 		"@formidablejs/mailer": "^0.0.1-rc1",
 		"@formidablejs/schema-builder": "^0.0.1-rc2",
