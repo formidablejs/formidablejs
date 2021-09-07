@@ -1,3 +1,5 @@
+import { env } from '@formidablejs/helpers'
+
 export default {
 
 	# --------------------------------------------------------------------------
@@ -10,14 +12,14 @@ export default {
 	# all methods / origins / headers are allowed.
 
 	# You can enable CORS for 1 or multiple paths.
-	# Example: ['/api']
+	# Example: ['/user']
 	paths: [ '/*' ]
 
 	# Matches the request method. '['*']' allows all methods.
-	allowed_methods: ['POST']
+	allowed_methods: ['*']
 
 	# Matches the request origin. '['*']' allows all origins. Wildcards can be used, eg `*.mydomain.com`
-	allowed_origins: ['localhost:8080']
+	allowed_origins: [ env('CLIENT_URL', '*') ]
 
 	# Sets the Access-Control-Allow-Headers response header. `['*']` allows all headers.
 	allowed_headers: ['*']
