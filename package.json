@@ -16,7 +16,7 @@
 		"test:watch": "jest --roots=test --watchAll"
 	},
 	"dependencies": {
-		"@formidablejs/craftsman": "^0.0.1-rc2",
+		"@formidablejs/craftsman": "^0.0.1-rc3",
 		"@formidablejs/framework": "^0.0.1-rc6",
 		"@formidablejs/helpers": "^0.0.1-rc1",
 		"@formidablejs/mailer": "^0.0.1-rc1",
