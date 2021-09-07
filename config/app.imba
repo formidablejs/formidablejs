@@ -95,7 +95,6 @@ export default {
 		require('@formidablejs/framework').SessionFileStoreServiceResolver
 		require('@formidablejs/framework').LanguageServiceResolver
 		require('@formidablejs/framework').MailServiceResolver
-		require('@formidablejs/framework').CorsServiceResolver
 		require('@formidablejs/framework').PersonalAccessTokenServiceResolver
 		require('@formidablejs/framework').AuthenticationServiceResolver
 		require('@formidablejs/framework').CsrfServiceResolver
