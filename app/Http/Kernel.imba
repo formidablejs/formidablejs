@@ -1,6 +1,5 @@
 import {
 	Authenticate
-	HandleCors
 	HasCsrfToken
 	HasEncryptionKey
 	Kernel as HttpKernel
@@ -37,7 +36,6 @@ export class Kernel < HttpKernel
 	get routeMiddleware
 		{
 			'auth': Authenticate
-			'cors': HandleCors
 			'guest': ErrorIfAuthenticated
 			'lang': AcceptLanguage
 			'signed': ValidateSignature
