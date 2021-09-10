@@ -23,7 +23,7 @@
 		"@formidablejs/schema-builder": "^0.0.1-rc2",
 		"@formidablejs/stubs": "^0.0.1-rc2",
 		"db-migrate-mysql": "^2.1.2",
-		"imba": "^2.0.0-alpha.165",
+		"imba": "^2.0.0-alpha.155",
 		"ms": "^2.1.2"
 	},
 	"devDependencies": {
