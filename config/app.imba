@@ -1,4 +1,4 @@
-import { env, toBoolean } from '@formidablejs/helpers'
+import { helpers } from '@formidablejs/framework'
 
 export default {
 
@@ -10,7 +10,7 @@ export default {
 	# framework needs to place the application's name in a notification or
 	# any other location as required by the application or its packages.
 
-	name: env 'APP_NAME', 'Formidable'
+	name: helpers.env 'APP_NAME', 'Formidable'
 
 	# --------------------------------------------------------------------------
 	# Application Environment
@@ -20,7 +20,7 @@ export default {
 	# running in. This may determine how you prefer to configure various
 	# services the application utilizes. Set this in your ".env" file.
 
-	env: env 'APP_ENV', 'production'
+	env: helpers.env 'APP_ENV', 'production'
 
 	# --------------------------------------------------------------------------
 	# Application Debug Mode
@@ -30,7 +30,7 @@ export default {
 	# stack traces will be shown on every error that occurs within your
 	# application. If disabled, a simple generic error page is shown.
 
-	debug: toBoolean(env 'APP_DEBUG', false)
+	debug: helpers.toBoolean(helpers.env 'APP_DEBUG', false)
 
 	# --------------------------------------------------------------------------
 	# Application URL
@@ -40,17 +40,9 @@ export default {
 	# the `app.url` helper method. Please set this to the root of your
 	# application.
 
-	url: env 'APP_URL', 'http://localhost:3000'
+	url: helpers.env 'APP_URL', 'http://localhost:3000'
 
-	client_url: env('CLIENT_URL')
-
-	# --------------------------------------------------------------------------
-	# Application Timezone
-	# --------------------------------------------------------------------------
-	#
-	# Here you may specify the default timezone for your application.
-
-	timezone: 'UTC'
+	client_url: helpers.env 'CLIENT_URL', 'http://localhost:8000'
 
 	# --------------------------------------------------------------------------
 	# Application Locale Configuration
@@ -79,7 +71,7 @@ export default {
 	# This key is used to encrypt and decrypt various values. Out of the box
 	# Harness uses this key to encrypt or decrypt cookies and the cache.
 
-	key: env 'APP_KEY'
+	key: helpers.env 'APP_KEY'
 
 	# --------------------------------------------------------------------------
 	# Autoloaded Application Resolvers

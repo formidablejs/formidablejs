@@ -1,5 +1,4 @@
-import { env, slug } from '@formidablejs/helpers'
-import ms from 'ms'
+import { helpers } from '@formidablejs/framework'
 
 export default {
 
@@ -24,7 +23,7 @@ export default {
 	# The name of the session ID cookie to set in the response
 	# (and read from in the request).
 
-	cookie: env 'SESSION_COOKIE', slug( env('APP_NAME', 'formidable'), '_' ) + '_session'
+	cookie: helpers.env 'SESSION_COOKIE', helpers.slug( helpers.env('APP_NAME', 'formidable'), '_' ) + '_session'
 
 	# --------------------------------------------------------------------------
 	# Session Encryption
@@ -43,7 +42,7 @@ export default {
 	# Here you may specify the number of minutes that you wish the session
 	# to be allowed to remain idle before it expires.
 
-	lifetime: env 'SESSION_LIFETIME', ms '2 hours'
+	lifetime: helpers.env 'SESSION_LIFETIME', helpers.ms '2 hours'
 
 	# --------------------------------------------------------------------------
 	# Session Cookie Path
@@ -62,7 +61,7 @@ export default {
 	# domain is set, and most clients will consider the cookie to apply to
 	# only the current domain.
 
-	domain: env 'SESSION_DOMAIN', null
+	domain: helpers.env 'SESSION_DOMAIN', null
 
 	# --------------------------------------------------------------------------
 	# HTTPS Only Cookies
@@ -70,7 +69,7 @@ export default {
 	#
 	# Ensures the browser only sends the cookie over HTTPS.
 
-	secure: env 'SESSION_SECURE_COOKIE', false
+	secure: helpers.env 'SESSION_SECURE_COOKIE', false
 
 	# --------------------------------------------------------------------------
 	# HTTP Access Only
@@ -79,7 +78,7 @@ export default {
 	# Ensures the cookie is sent only over HTTP(S), not client JavaScript,
 	# helping to protect against cross-site scripting.
 
-	http_only: true
+	http_only: helpers.env 'SESSION_HTTP_ONLY', false
 
 	# --------------------------------------------------------------------------
 	# Same-Site Cookies
@@ -91,6 +90,6 @@ export default {
 	#
 	# Supported: "lax", "strict", "none"
 
-	same_site: 'lax'
+	same_site: helpers.env 'SESSION_SAME_SITE', 'none'
 
 }

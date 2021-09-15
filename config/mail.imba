@@ -1,4 +1,4 @@
-import { env } from '@formidablejs/helpers'
+import { helpers } from '@formidablejs/framework'
 
 export default {
 	# --------------------------------------------------------------------------
@@ -20,11 +20,11 @@ export default {
 	mailers: {
 		smtp: {
 			transport: 'smtp'
-			host: env('MAIL_HOST', 'smtp.mailgun.org')
-			port: env('MAIL_PORT', 587)
-			secure: env('MAIL_SECURE', true)
-			username: env('MAIL_USERNAME')
-			password: env('MAIL_PASSWORD')
+			host: helpers.env 'MAIL_HOST', 'smtp.mailgun.org'
+			port: helpers.env 'MAIL_PORT', 587
+			secure: helpers.env 'MAIL_SECURE', true
+			username: helpers.env 'MAIL_USERNAME'
+			password: helpers.env 'MAIL_PASSWORD'
 		}
 
 		sendmail: {
@@ -41,7 +41,7 @@ export default {
 	# The email address that will be used in the "From" field of all emails.
 
 	from: {
-		address: env('MAIL_FROM_ADDRESS', 'hello@example.com')
-		name: env('MAIL_FROM_NAME', 'Example')
+		address: helpers.env 'MAIL_FROM_ADDRESS', 'hello@example.com'
+		name: helpers.env 'MAIL_FROM_NAME', 'Example'
 	}
 }
