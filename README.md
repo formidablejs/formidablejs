@@ -63,6 +63,12 @@ Publish `@formidablejs/framework` and `@formidablejs/mailer`:
 ./node_modules/.bin/craftsman install --package=@formidablejs/mailer -v
 ```
 
+Cache the config files:
+
+```bash
+./node_modules/.bin/craftsman cache
+```
+
 And finally, run your application:
 
 ```bash
