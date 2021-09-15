@@ -1,4 +1,4 @@
-import { env, slug } from '@formidablejs/helpers'
+import { helpers } from '@formidablejs/framework'
 
 export default {
 
@@ -10,7 +10,7 @@ export default {
 	# to use as your default connection for all database work. Of course
 	# you may use many connections at once using the Database library.
 
-	default: env 'DB_CONNECTION', 'mysql'
+	default: helpers.env 'DB_CONNECTION', 'mysql'
 
 	# --------------------------------------------------------------------------
 	# Database Connections
@@ -22,19 +22,30 @@ export default {
 	connections: {
 		sqlite: {
 			driver: 'sqlite3'
-			url: env 'DATABASE_URL'
-			database: env 'DB_DATABASE'
+			url: helpers.env 'DATABASE_URL'
+			database: helpers.env 'DB_DATABASE'
 		}
 
 		mysql: {
 			driver: 'mysql'
-			url: env 'DATABASE_URL'
-			host: env 'DB_HOST', '127.0.0.1'
-			port: env 'DB_PORT', '3306'
-			database: env 'DB_DATABASE', ''
-			username: env 'DB_USERNAME', ''
-			password: env 'DB_PASSWORD', ''
+			url: helpers.env 'DATABASE_URL'
+			host: helpers.env 'DB_HOST', '127.0.0.1'
+			port: helpers.env 'DB_PORT', '3306'
+			database: helpers.env 'DB_DATABASE', ''
+			username: helpers.env 'DB_USERNAME', ''
+			password: helpers.env 'DB_PASSWORD', ''
 			charset: 'utf8mb4'
+		}
+
+		pgsql: {
+			driver: 'pg'
+			url: helpers.env 'DATABASE_URL'
+			host: helpers.env 'DB_HOST', '127.0.0.1'
+			port: helpers.env 'DB_PORT', '5432'
+			database: helpers.env 'DB_DATABASE', ''
+			username: helpers.env 'DB_USERNAME', ''
+			password: helpers.env 'DB_PASSWORD', ''
+			charset: 'utf8'
 		}
 	}
 
@@ -56,23 +67,23 @@ export default {
 
 	redis: {
 		options: {
-			prefix: env 'REDIS_PREFIX', slug(env('APP_NAME', 'formidable'), '_') + '_database_'
+			prefix: helpers.env 'REDIS_PREFIX', helpers.slug(helpers.env('APP_NAME', 'formidable'), '_') + '_database_'
 		}
 
 		default: {
-			url: env 'REDIS_URL'
-			host: env 'REDIS_HOST', '127.0.0.1'
-			password: env 'REDIS_PASSWORD', null
-			port: env 'REDIS_PORT', '6379'
-			database: env 'REDIS_DB', '0'
+			url: helpers.env 'REDIS_URL'
+			host: helpers.env 'REDIS_HOST', '127.0.0.1'
+			password: helpers.env 'REDIS_PASSWORD', null
+			port: helpers.env 'REDIS_PORT', '6379'
+			database: helpers.env 'REDIS_DB', '0'
 		}
 
 		cache: {
-			url: env 'REDIS_URL'
-			host: env 'REDIS_HOST', '127.0.0.1'
-			password: env 'REDIS_PASSWORD', null
-			port: env 'REDIS_PORT', '6379'
-			database: env 'REDIS_CACHE_DB', '1'
+			url: helpers.env 'REDIS_URL'
+			host: helpers.env 'REDIS_HOST', '127.0.0.1'
+			password: helpers.env 'REDIS_PASSWORD', null
+			port: helpers.env 'REDIS_PORT', '6379'
+			database: helpers.env 'REDIS_CACHE_DB', '1'
 		}
 	}
 
