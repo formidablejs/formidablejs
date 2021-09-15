@@ -9,11 +9,11 @@ Formidable is a Imba Framework for Rapid API Development.
 
 To get started, you need to install the Craftsman CLI. The Craftsman CLI will allow you to create new projects, and also provides a number of helpful commands that can assist you while building your application.
 
-#### Your first Formidable Application
+#### Your first Formidable Application (recommended)
 
 When creating a new application, the Craftsman CLI will clone the formidablejs repository from Github and install all the dependencies for you:
 
-```
+```bash
 npm i -g @formidablejs/craftsman
 craftsman new project-name
 ```
@@ -22,8 +22,50 @@ craftsman new project-name
 
 Once done, you can run your application using the following command.
 
-```
+```bash
 cd project-name
+npm start
+```
+
+#### Alternative Installation (not recommended)
+
+You may also create a new application using the following commands:
+
+Clone the Formidablejs repository from Github:
+
+```bash
+git clone https://github.com/formidablejs/formidablejs.git project-name
+```
+
+`cd` and install the dependencies:
+
+```bash
+cd project-name
+npm i
+```
+
+Copy the `.env.example` file to `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Generate an application key:
+
+```bash
+./node_modules/.bin/craftsman key
+```
+
+Publish `@formidablejs/framework` and `@formidablejs/mailer`:
+
+```bash
+./node_modules/.bin/craftsman install --package=@formidablejs/framework -v
+./node_modules/.bin/craftsman install --package=@formidablejs/mailer -v
+```
+
+And finally, run your application:
+
+```bash
 npm start
 ```
 
