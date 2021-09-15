@@ -1,6 +1,14 @@
-const { Application, request } = require('../bootstrap/compiled/server.cli');
+const { Application, request } = require('../dist/server.app');
+const { helpers: { config } } = require('@formidablejs/framework');
 
-describe('Application (e2e)', () => {
+/**
+ * Skip if not in testing environment
+ */
+const maybe = config('app.env') === 'testing'
+	? describe
+	: describe.skip
+
+maybe('Application (e2e)', () => {
 	let app;
 
 	beforeAll(async () => {
