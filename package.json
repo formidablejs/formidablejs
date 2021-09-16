@@ -16,11 +16,10 @@
 		"test:watch": "jest --roots=test --watchAll"
 	},
 	"dependencies": {
-		"@formidablejs/craftsman": "^0.1.0-alpha.1",
-		"@formidablejs/framework": "^0.1.0-alpha.3",
+		"@formidablejs/craftsman": "^0.2.0-alpha.1",
+		"@formidablejs/framework": "^0.2.0-alpha.1",
 		"@formidablejs/mailer": "^0.1.0-alpha.1",
-		"@formidablejs/schema-builder": "^0.1.0-alpha.1",
-		"@formidablejs/stubs": "^0.1.0-alpha.1",
+		"@formidablejs/stubs": "^0.2.0-alpha.1",
 		"imba": "^2.0.0-alpha.170"
 	},
 	"devDependencies": {
