@@ -22,8 +22,7 @@ export default {
 	connections: {
 		sqlite: {
 			driver: 'sqlite3'
-			url: helpers.env 'DATABASE_URL'
-			database: helpers.env 'DB_DATABASE'
+			filename: helpers.env 'DATABASE_URL'
 		}
 
 		mysql: {
@@ -31,8 +30,8 @@ export default {
 			url: helpers.env 'DATABASE_URL'
 			host: helpers.env 'DB_HOST', '127.0.0.1'
 			port: helpers.env 'DB_PORT', '3306'
+			user: helpers.env 'DB_USER', ''
 			database: helpers.env 'DB_DATABASE', ''
-			username: helpers.env 'DB_USERNAME', ''
 			password: helpers.env 'DB_PASSWORD', ''
 			charset: 'utf8mb4'
 		}
@@ -42,22 +41,38 @@ export default {
 			url: helpers.env 'DATABASE_URL'
 			host: helpers.env 'DB_HOST', '127.0.0.1'
 			port: helpers.env 'DB_PORT', '5432'
+			user: helpers.env 'DB_USER', ''
 			database: helpers.env 'DB_DATABASE', ''
-			username: helpers.env 'DB_USERNAME', ''
+			password: helpers.env 'DB_PASSWORD', ''
+			charset: 'utf8'
+		}
+
+		mssql: {
+			driver: 'tedious'
+			url: helpers.env 'DATABASE_URL'
+			host: helpers.env 'DB_HOST', '127.0.0.1'
+			port: helpers.env 'DB_PORT', '5432'
+			user: helpers.env 'DB_USER', ''
+			database: helpers.env 'DB_DATABASE', ''
 			password: helpers.env 'DB_PASSWORD', ''
 			charset: 'utf8'
 		}
 	}
 
 	# --------------------------------------------------------------------------
-	# Migration Repository Table
+	# Migration Settings
 	# --------------------------------------------------------------------------
 	#
-	# This table keeps track of all the migrations that have already run for
-	# your application. Using this information, we can determine which of
-	# the migrations on disk haven't actually been run in the database.
+	# Here you can configure database migration settings.
+	#
+	# The "tableName" is the name of the table that will store the migration
+	# state.
+	# The "directory" is the location where migrations files are stored.
 
-	migrations: 'migrations'
+	migrations: {
+		tableName: 'migrations'
+		directory: './database/migrations'
+	}
 
 	# --------------------------------------------------------------------------
 	# Redis Databases
