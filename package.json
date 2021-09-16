@@ -12,8 +12,8 @@
 		"build:prod": "craftsman build --env production",
 		"start": "craftsman serve",
 		"start:dev": "craftsman serve --dev",
-		"test": "jest --roots=test",
-		"test:watch": "jest --roots=test --watchAll"
+		"test": "jest --roots test",
+		"test:watch": "jest --roots test --watchAll"
 	},
 	"dependencies": {
 		"@formidablejs/craftsman": "^0.2.0-alpha.1",
