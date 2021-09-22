@@ -16,8 +16,8 @@
 		"test:watch": "jest --roots test --watchAll"
 	},
 	"dependencies": {
-		"@formidablejs/craftsman": "^0.2.0-alpha.4",
-		"@formidablejs/framework": "^0.2.0-alpha.5",
+		"@formidablejs/craftsman": "^0.2.0-alpha.5",
+		"@formidablejs/framework": "^0.2.0-alpha.6",
 		"@formidablejs/mailer": "^0.1.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.0-alpha.3",
 		"imba": "^2.0.0-alpha.172"
