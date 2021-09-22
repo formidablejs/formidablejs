@@ -1,4 +1,4 @@
-const { Application, request } = require('../dist/server.app');
+const { Application, request } = require('../.formidable/server.app');
 const { helpers: { config } } = require('@formidablejs/framework');
 
 /**
