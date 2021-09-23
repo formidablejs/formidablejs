@@ -19,7 +19,7 @@
 		"@formidablejs/craftsman": "^0.2.1-alpha.1",
 		"@formidablejs/framework": "^0.2.1-alpha.2",
 		"@formidablejs/mailer": "^0.1.0-alpha.1",
-		"@formidablejs/stubs": "^0.2.0-alpha.3",
+		"@formidablejs/stubs": "^0.2.1-alpha.1",
 		"imba": "^2.0.0-alpha.172"
 	},
 	"devDependencies": {
