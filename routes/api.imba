@@ -1,3 +1,5 @@
-import { Route } from '@formidablejs/framework'
+import { FormRequest, Route } from '@formidablejs/framework'
 
-Route.get('/', do(request) request.translate 'index.hello', 'Hello World').name('hello').middleware(['lang'])
+Route.get('/', do(request\FormRequest)
+	request.translate('index.hello', 'Hello World')
+).name('hello').middleware(['lang'])
