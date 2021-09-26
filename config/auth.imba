@@ -25,7 +25,11 @@ export default {
 	providers: {
 		jwt: {
 			driver: 'jwt'
-			hidden: [ 'id', 'password' ]
+			hidden: [
+				'id'
+				'password'
+				'remember_token'
+			]
 			table: 'users'
 		}
 
