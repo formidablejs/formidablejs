@@ -6,7 +6,7 @@ exports.up = (knex) => {
 		table.string('name');
 		table.string('abilities').nullable();
 		table.timestamp('last_used_at').nullable();
-		table.timestamps();
+		table.timestamps(true, true);
 	});
 }
 
