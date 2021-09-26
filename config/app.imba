@@ -69,9 +69,11 @@ export default {
 	# --------------------------------------------------------------------------
 	#
 	# This key is used to encrypt and decrypt various values. Out of the box
-	# Harness uses this key to encrypt or decrypt cookies and the cache.
+	# Formidable uses this key to encrypt or decrypt cookies and the cache.
 
 	key: helpers.env 'APP_KEY'
+
+	cipher: 'AES-256-CBC'
 
 	# --------------------------------------------------------------------------
 	# Autoloaded Application Resolvers
