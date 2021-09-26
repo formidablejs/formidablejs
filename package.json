@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"@formidablejs/craftsman": "^0.3.0-alpha.2",
-		"@formidablejs/framework": "^0.3.0-alpha.3",
+		"@formidablejs/framework": "^0.3.0-alpha.4",
 		"@formidablejs/mailer": "^0.1.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.1-alpha.2",
 		"imba": "^2.0.0-alpha.173"
