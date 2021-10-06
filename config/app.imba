@@ -92,6 +92,7 @@ export default {
 		require('@formidablejs/framework').PersonalAccessTokenServiceResolver
 		require('@formidablejs/framework').AuthenticationServiceResolver
 		require('@formidablejs/framework').CsrfServiceResolver
+		require('@formidablejs/framework').MaintenanceServiceResolver
 
 		# application resolvers...
 		require('../app/Resolvers/AppServiceResolver')
