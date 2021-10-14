@@ -16,15 +16,15 @@
 		"test:watch": "jest --roots test --watchAll"
 	},
 	"dependencies": {
-		"@formidablejs/craftsman": "^0.5.0-alpha.3",
-		"@formidablejs/framework": "^0.5.0-alpha.1",
+		"@formidablejs/craftsman": "^0.6.0-alpha.1",
+		"@formidablejs/framework": "^0.6.1-alpha.1",
 		"@formidablejs/mailer": "^0.2.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.1-alpha.2",
 		"imba": "^2.0.0-alpha.175"
 	},
 	"devDependencies": {
 		"@types/jest": "^27.0.2",
-		"@types/node": "^16.10.3",
+		"@types/node": "^16.11.0",
 		"jest": "^27.2.5",
 		"supertest": "^6.1.6"
 	}
