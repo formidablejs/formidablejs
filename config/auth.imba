@@ -1,3 +1,5 @@
+import { helpers } from '@formidablejs/framework'
+
 export default {
 
 	# --------------------------------------------------------------------------
@@ -21,6 +23,9 @@ export default {
 	# --------------------------------------------------------------------------
 	# Providers
 	# --------------------------------------------------------------------------
+	#
+	# Here you can define your authentication providers. Providers are used to
+	# specify how your application should authenticate users.
 
 	providers: {
 		jwt: {
@@ -38,4 +43,14 @@ export default {
 			table: 'users'
 		}
 	}
+
+	# --------------------------------------------------------------------------
+	# Remember Me
+	# --------------------------------------------------------------------------
+	#
+	# The "remember" option is used to specify how long the user should be
+	# remembered in the application. By default, the user will be remembered
+	# for 6 months if the "remember_me" flag is set to true in the login body.
+
+	remember: helpers.ms '6 months'
 }
