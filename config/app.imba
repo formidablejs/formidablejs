@@ -1,4 +1,18 @@
 import { helpers } from '@formidablejs/framework'
+import { HelpersServiceResolver } from '@formidablejs/helpers'
+import { HashServiceResolver } from '@formidablejs/framework'
+import { RedisServiceResolver } from '@formidablejs/framework'
+import { SessionMemoryStoreServiceResolver } from '@formidablejs/framework'
+import { SessionFileStoreServiceResolver } from '@formidablejs/framework'
+import { LanguageServiceResolver } from '@formidablejs/framework'
+import { MailServiceResolver } from '@formidablejs/mailer'
+import { PersonalAccessTokenServiceResolver } from '@formidablejs/framework'
+import { AuthenticationServiceResolver } from '@formidablejs/framework'
+import { CsrfServiceResolver } from '@formidablejs/framework'
+import { MaintenanceServiceResolver } from '@formidablejs/framework'
+import { AppServiceResolver } from '../app/Resolvers/AppServiceResolver'
+import { RouterServiceResolver } from '../app/Resolvers/RouterServiceResolver'
+import { ValidationServiceResolver } from '../app/Resolvers/ValidationServiceResolver'
 
 export default {
 
@@ -83,21 +97,25 @@ export default {
 	# they extend the functionality of your application.
 
 	resolvers: [
-		require('@formidablejs/framework').HashServiceResolver
-		require('@formidablejs/framework').RedisServiceResolver
-		require('@formidablejs/framework').SessionMemoryStoreServiceResolver
-		require('@formidablejs/framework').SessionFileStoreServiceResolver
-		require('@formidablejs/framework').LanguageServiceResolver
-		require('@formidablejs/framework').MailServiceResolver
-		require('@formidablejs/framework').PersonalAccessTokenServiceResolver
-		require('@formidablejs/framework').AuthenticationServiceResolver
-		require('@formidablejs/framework').CsrfServiceResolver
-		require('@formidablejs/framework').MaintenanceServiceResolver
+		# Formidable Framework Service Resolvers...
+		HelpersServiceResolver
+		HashServiceResolver
+		RedisServiceResolver
+		SessionMemoryStoreServiceResolver
+		SessionFileStoreServiceResolver
+		LanguageServiceResolver
+		MailServiceResolver
+		PersonalAccessTokenServiceResolver
+		AuthenticationServiceResolver
+		CsrfServiceResolver
+		MaintenanceServiceResolver
 
-		# application resolvers...
-		require('../app/Resolvers/AppServiceResolver')
-		require('../app/Resolvers/RouterServiceResolver')
-		require('../app/Resolvers/ValidationServiceResolver')
+		# Package Service Resolvers...
+
+		# Application Service Resolvers...
+		AppServiceResolver
+		RouterServiceResolver
+		ValidationServiceResolver
 	]
 
 }
