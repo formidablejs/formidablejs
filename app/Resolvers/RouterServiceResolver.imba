@@ -1,6 +1,8 @@
-import { AuthService as Auth, ServiceResolver, Route } from '@formidablejs/framework'
+import { AuthService as Auth } from '@formidablejs/framework'
+import { Route } from '@formidablejs/framework'
+import { ServiceResolver } from '@formidablejs/framework'
 
-export default class RouterServiceResolver < ServiceResolver
+export class RouterServiceResolver < ServiceResolver
 
 	def boot
 		Route.group { middleware: 'jwt' }, do
