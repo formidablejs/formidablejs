@@ -1,15 +1,16 @@
 import { helpers } from '@formidablejs/framework'
-import { HelpersServiceResolver } from '@formidablejs/helpers'
+import { AuthenticationServiceResolver } from '@formidablejs/framework'
+import { BugsnagServiceResolver } from '@formidablejs/bugsnag-plugin'
+import { CsrfServiceResolver } from '@formidablejs/framework'
 import { HashServiceResolver } from '@formidablejs/framework'
-import { RedisServiceResolver } from '@formidablejs/framework'
-import { SessionMemoryStoreServiceResolver } from '@formidablejs/framework'
-import { SessionFileStoreServiceResolver } from '@formidablejs/framework'
+import { HelpersServiceResolver } from '@formidablejs/helpers'
 import { LanguageServiceResolver } from '@formidablejs/framework'
 import { MailServiceResolver } from '@formidablejs/mailer'
-import { PersonalAccessTokenServiceResolver } from '@formidablejs/framework'
-import { AuthenticationServiceResolver } from '@formidablejs/framework'
-import { CsrfServiceResolver } from '@formidablejs/framework'
 import { MaintenanceServiceResolver } from '@formidablejs/framework'
+import { PersonalAccessTokenServiceResolver } from '@formidablejs/framework'
+import { RedisServiceResolver } from '@formidablejs/framework'
+import { SessionFileStoreServiceResolver } from '@formidablejs/framework'
+import { SessionMemoryStoreServiceResolver } from '@formidablejs/framework'
 import { AppServiceResolver } from '../app/Resolvers/AppServiceResolver'
 import { RouterServiceResolver } from '../app/Resolvers/RouterServiceResolver'
 import { ValidationServiceResolver } from '../app/Resolvers/ValidationServiceResolver'
@@ -98,6 +99,7 @@ export default {
 
 	resolvers: [
 		# Formidable Framework Service Resolvers...
+		BugsnagServiceResolver
 		HelpersServiceResolver
 		HashServiceResolver
 		RedisServiceResolver
