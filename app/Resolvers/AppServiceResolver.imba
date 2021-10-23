@@ -1,12 +1,12 @@
-import { ServiceResolver, AuthService } from '@formidablejs/framework'
-import VerifyEmail from '../Mail/VerifyEmail'
+import { AuthService as Auth } from '@formidablejs/framework'
+import { ServiceResolver } from '@formidablejs/framework'
 import ResetPassword from '../Mail/ResetPassword'
+import VerifyEmail from '../Mail/VerifyEmail'
 
-export default class AppServiceResolver < ServiceResolver
+export class AppServiceResolver < ServiceResolver
 
 	def boot
-		AuthService
-			.verificationMailer(VerifyEmail)
-			.resetPasswordMailer(ResetPassword)
+		Auth.verificationMailer(VerifyEmail)
+		Auth.resetPasswordMailer(ResetPassword)
 
 		self
