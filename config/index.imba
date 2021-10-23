@@ -1,6 +1,7 @@
 import { ConfigRepository } from '@formidablejs/framework'
 import app from './app'
 import auth from './auth'
+import bugsnag from './bugsnag'
 import context from './context'
 import cors from './cors'
 import database from './database'
@@ -18,6 +19,7 @@ export class Config < ConfigRepository
 		{
 			app
 			auth
+			bugsnag
 			context
 			cors
 			database
