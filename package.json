@@ -19,7 +19,7 @@
 		"@bugsnag/js": "^7.13.2",
 		"@formidablejs/bugsnag-plugin": "^0.0.2",
 		"@formidablejs/craftsman": "^0.6.1",
-		"@formidablejs/framework": "^0.6.3",
+		"@formidablejs/framework": "^0.6.4",
 		"@formidablejs/helpers": "^0.1.1",
 		"@formidablejs/mailer": "^0.2.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.2-alpha.1",
