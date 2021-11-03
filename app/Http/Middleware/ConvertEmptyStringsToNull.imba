@@ -1,6 +1,6 @@
 import { ConvertEmptyStringsToNull as Middleware } from '@formidablejs/framework'
 
-export default class ConvertEmptyStringsToNull < Middleware
+export class ConvertEmptyStringsToNull < Middleware
 
 	get except
 		[

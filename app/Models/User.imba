@@ -2,7 +2,7 @@ import { @context } from '@formidablejs/framework'
 import { Model } from '@formidablejs/framework'
 
 @context
-export default class User < Model
+export class User < Model
 
 	# The name used to represent the model in the craftsman context.
 	#

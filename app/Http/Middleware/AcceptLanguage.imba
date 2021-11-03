@@ -1,6 +1,6 @@
 import { AcceptLanguage as Middleware } from '@formidablejs/framework'
 
-export default class AcceptLanguage < Middleware
+export class AcceptLanguage < Middleware
 
 	get mappings
 		{
