@@ -110,7 +110,6 @@ export default {
 		SessionMemoryStoreServiceResolver
 		SessionFileStoreServiceResolver
 		SessionServiceResolver
-		CsrfServiceResolver
 		HelpersServiceResolver
 		HashServiceResolver
 		LanguageServiceResolver
@@ -118,6 +117,7 @@ export default {
 		PersonalAccessTokenServiceResolver
 		AuthenticationServiceResolver
 		CsrfServiceResolver
+		CorsServiceResolver
 		MaintenanceServiceResolver
 
 		# Package Service Resolvers...
