@@ -75,6 +75,17 @@ export default {
 	}
 
 	# --------------------------------------------------------------------------
+	# useNullAsDefault
+	# --------------------------------------------------------------------------
+	#
+	# Set useNullAsDefault to true when using sqlite as the default database
+	# driver to prevent knex from throwing a warning.
+	#
+	# See: https://github.com/formidablejs/framework/issues/61
+
+	useNullAsDefault: null
+
+	# --------------------------------------------------------------------------
 	# Redis Databases
 	# --------------------------------------------------------------------------
 	#
