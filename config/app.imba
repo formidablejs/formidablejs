@@ -8,6 +8,7 @@ import { HashServiceResolver } from '@formidablejs/framework'
 import { HelpersServiceResolver } from '@formidablejs/helpers'
 import { LanguageServiceResolver } from '@formidablejs/framework'
 import { MailServiceResolver } from '@formidablejs/mailer'
+import { MultipartServiceResolver } from '@formidablejs/framework'
 import { MaintenanceServiceResolver } from '@formidablejs/framework'
 import { PersonalAccessTokenServiceResolver } from '@formidablejs/framework'
 import { RedisServiceResolver } from '@formidablejs/framework'
@@ -105,6 +106,7 @@ export default {
 		# Formidable Framework Service Resolvers...
 		BugsnagServiceResolver
 		RedisServiceResolver
+		MultipartServiceResolver
 		StaticContentServiceResolver
 		CookieServiceResolver
 		SessionMemoryStoreServiceResolver
