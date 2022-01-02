@@ -1,5 +1,3 @@
-import { helpers } from '@formidablejs/framework'
-
 export default {
 
 	# --------------------------------------------------------------------------
@@ -52,5 +50,5 @@ export default {
 	# remembered in the application. By default, the user will be remembered
 	# for 6 months if the "remember_me" flag is set to true in the login body.
 
-	remember: helpers.ms '6 months'
+	remember: 60 * 60 * 24 * 180
 }
