@@ -33,7 +33,7 @@ export default {
 	# should be encrypted before it is stored. All encryption will be run
 	# automatically by Formidable.
 
-	encrypt: true,
+	encrypt: false,
 
 	# --------------------------------------------------------------------------
 	# Session Expiration
