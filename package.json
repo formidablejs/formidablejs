@@ -16,19 +16,19 @@
 		"test:watch": "jest --roots test --watchAll"
 	},
 	"dependencies": {
-		"@bugsnag/js": "^7.14.0",
+		"@bugsnag/js": "^7.14.1",
 		"@formidablejs/bugsnag-plugin": "^0.0.2",
 		"@formidablejs/craftsman": "^0.6.7",
-		"@formidablejs/framework": "^0.9.1",
+		"@formidablejs/framework": "^0.9.2",
 		"@formidablejs/helpers": "^0.1.1",
 		"@formidablejs/mailer": "^0.2.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.4",
-		"imba": "^2.0.0-alpha.198"
+		"imba": "^2.0.0-alpha.199"
 	},
 	"devDependencies": {
-		"@types/jest": "^27.0.3",
-		"@types/node": "^17.0.0",
-		"jest": "^27.4.5",
+		"@types/jest": "^27.4.0",
+		"@types/node": "^17.0.8",
+		"jest": "^27.4.7",
 		"supertest": "^6.1.6"
 	}
 }
