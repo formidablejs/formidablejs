@@ -14,7 +14,7 @@ export default {
 	#
 	# See: "config > app.imba > resolvers"
 
-	driver: 'memory'
+	driver: 'file'
 
 	# --------------------------------------------------------------------------
 	# Session Cookie Name
