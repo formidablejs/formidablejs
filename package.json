@@ -18,8 +18,8 @@
 	"dependencies": {
 		"@bugsnag/js": "^7.16.1",
 		"@formidablejs/bugsnag-plugin": "^0.0.3",
-		"@formidablejs/craftsman": "^0.6.9",
-		"@formidablejs/framework": "^0.9.5",
+		"@formidablejs/craftsman": "^0.6.10",
+		"@formidablejs/framework": "^0.9.7",
 		"@formidablejs/helpers": "^0.1.1",
 		"@formidablejs/mailer": "^0.2.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.5",
