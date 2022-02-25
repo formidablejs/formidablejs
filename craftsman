@@ -1,0 +1,12 @@
+#!/usr/bin/env imbar
+
+import { Kernel } from '@formidablejs/framework'
+import { ConsoleKernel } from '@formidablejs/framework'
+import app from './bootstrap/main'
+
+def main
+	(await app.initiate(app.make(Kernel), true))
+		.craftsman(app.make(ConsoleKernel))
+		.run!
+
+main!
