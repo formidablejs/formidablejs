@@ -1,12 +1,6 @@
-#!/usr/bin/env imbar
+#!/usr/bin/env node
+const { spawn } = require('child_process')
 
-import { Kernel } from '@formidablejs/framework'
-import { ConsoleKernel } from '@formidablejs/framework'
-import app from './bootstrap/main'
-
-def main
-	(await app.initiate(app.make(Kernel), true))
-		.craftsman(app.make(ConsoleKernel))
-		.run!
-
-main!
+spawn('imbar', ['bootstrap/craftsman.imba', ...process.argv.slice(2)], {
+    stdio: 'inherit', cwd: process.cwd()
+})
