@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const { spawn } = require('child_process')
 
-spawn('imbar', ['bootstrap/craftsman.imba', ...process.argv.slice(2)], {
+spawn('imbar', ['bootstrap/console.imba', ...process.argv.slice(2)], {
     stdio: 'inherit', cwd: process.cwd()
 })
