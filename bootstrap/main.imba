@@ -15,5 +15,6 @@ app
 	.bind(Language, Language)
 	.bind(ExceptionHandler, Handler)
 	.bind(ConsoleKernel, AppConsole)
+	.prepare!
 
-export default app.prepare!
+export { app }
