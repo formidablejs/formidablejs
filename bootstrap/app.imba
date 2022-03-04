@@ -1,4 +1,4 @@
 import { Application } from '@formidablejs/framework'
-import path from 'path'
+import { resolve } from 'path'
 
-export const app = new Application path.resolve './'
+export const app = new Application resolve './'
