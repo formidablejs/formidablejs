@@ -22,6 +22,7 @@
 		"@formidablejs/helpers": "^0.1.1",
 		"@formidablejs/mailer": "^0.2.0-alpha.1",
 		"@formidablejs/stubs": "^0.2.6",
+		"imba-shell": "^0.3.1",
 		"imba": "^2.0.0-alpha.202",
 		"supertest": "^6.2.2"
 	},
