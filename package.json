@@ -6,12 +6,8 @@
 	"private": true,
 	"license": "UNLICENSED",
 	"scripts": {
-		"build": "craftsman build",
-		"build:dev": "craftsman build --env=development",
-		"build:test": "craftsman build --env=testing",
-		"build:prod": "craftsman build --env=production",
-		"start": "craftsman serve",
-		"start:dev": "craftsman serve --dev",
+		"start": "node craftsman serve",
+		"start:dev": "node craftsman serve --dev",
 		"test": "jest --roots test",
 		"test:watch": "jest --roots test --watchAll"
 	},
