@@ -10,13 +10,12 @@ const conf = {
     cwd: process.cwd(),
 };
 
-let sh = 'sh';
-let shFlag = '-c';
-
 if (process.platform === 'win32') {
-    sh = process.env.comspec || 'cmd';
-    shFlag = '/d /s /c';
+    const sh = process.env.comspec || 'cmd';
+    const shFlag = '/d /s /c';
     conf.windowsVerbatimArguments = true;
-}
 
-spawn(sh, [shFlag, runtime, console, ...process.argv.slice(2)], conf);
+    spawn(sh, [shFlag, runtime, console, ...process.argv.slice(2)], conf);
+} else {
+    spawn(runtime, [console, ...process.argv.slice(2)], conf);
+}
