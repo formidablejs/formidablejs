@@ -1,3 +1,6 @@
+const { Knex } = require('knex');
+
+/** @param {Knex} knex */
 exports.up = (knex) => {
 	return knex.schema.createTable('users', (table) => {
 		table.increments('id').primary();
@@ -10,4 +13,5 @@ exports.up = (knex) => {
 	});
 }
 
+/** @param {Knex} knex */
 exports.down = (knex) => knex.schema.dropTable('users');

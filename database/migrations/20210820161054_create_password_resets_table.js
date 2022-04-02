@@ -1,3 +1,6 @@
+const { Knex } = require('knex');
+
+/** @param {Knex} knex */
 exports.up = (knex) => {
 	return knex.schema.createTable('password_resets', (table) => {
 		table.string('email').primary().unique();
@@ -6,4 +9,5 @@ exports.up = (knex) => {
 	});
 }
 
+/** @param {Knex} knex */
 exports.down = (knex) => knex.schema.dropTable('password_resets');
