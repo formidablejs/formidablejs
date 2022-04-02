@@ -1,21 +1,16 @@
 #!/usr/bin/env node
-const { spawn } = require('child_process');
-const { join } = require('path');
+const { Console } = require('@formidablejs/framework');
 
-const runtime = join(process.cwd(), 'node_modules', '.bin', 'imbar');
-const console = join('bootstrap', 'console.imba');
+/**
+ * --------------------------------------------------------------------------
+ * Run The Craftsman Application
+ * --------------------------------------------------------------------------
+ *
+ * When running the console application, Formidable will attempt to load the
+ * console.imba script from the bootstrap directory. This script will be ran
+ * using the "ImbaR" runtime. Both the runtime and console script can be
+ * changed by providing the paths to the runtime and console scripts in the
+ * "make" function.
+ */
 
-const conf = {
-    stdio: 'inherit',
-    cwd: process.cwd(),
-};
-
-if (process.platform === 'win32') {
-    const sh = process.env.comspec || 'cmd';
-    const shFlag = '/d /s /c';
-    conf.windowsVerbatimArguments = true;
-
-    spawn(sh, [shFlag, runtime, console, ...process.argv.slice(2)], conf);
-} else {
-    spawn(runtime, [console, ...process.argv.slice(2)], conf);
-}
+Console.make().run();
