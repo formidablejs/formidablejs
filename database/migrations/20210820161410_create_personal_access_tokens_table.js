@@ -5,7 +5,7 @@ exports.up = (knex) => {
 	return knex.schema.createTable('personal_access_tokens', (table) => {
 		table.increments('id').primary();
 		table.string('tokenable_type');
-		table.integer('tokenable_id').index().unsigned();
+		table.bigInteger('tokenable_id').index().unsigned();
 		table.string('name');
 		table.string('abilities').nullable();
 		table.string('payload').nullable();
