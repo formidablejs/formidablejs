@@ -14,17 +14,17 @@
 	"dependencies": {
 		"@bugsnag/js": "^7.16.2",
 		"@formidablejs/bugsnag-plugin": "^0.0.3",
-		"@formidablejs/framework": "^0.10.4",
+		"@formidablejs/framework": "^0.11.0",
 		"@formidablejs/helpers": "^0.1.1",
 		"@formidablejs/mailer": "^0.3.0",
 		"@formidablejs/stubs": "^0.2.6",
+		"imba": "^2.0.0-alpha.207",
 		"imba-shell": "^0.4.0",
-		"imba": "^2.0.0-alpha.206",
 		"supertest": "^6.2.2"
 	},
 	"devDependencies": {
 		"@types/jest": "^27.4.1",
-		"@types/node": "^17.0.23",
+		"@types/node": "^17.0.25",
 		"jest": "^27.5.1"
 	}
 }
