@@ -1,13 +1,13 @@
-const { Knex } = require('knex');
+const { Database } = require('@formidablejs/framework');
 
-/** @param {Knex} knex */
-exports.up = (knex) => {
-	return knex.schema.createTable('password_resets', (table) => {
+/** @param {Database} DB */
+exports.up = (DB) => {
+	return DB.schema.createTable('password_resets', (table) => {
 		table.string('email').primary().unique();
 		table.string('token');
-		table.timestamp('created_at').defaultTo(knex.fn.now());
+		table.timestamp('created_at').defaultTo(DB.fn.now());
 	});
 }
 
-/** @param {Knex} knex */
-exports.down = (knex) => knex.schema.dropTable('password_resets');
+/** @param {Database} DB */
+exports.down = (DB) => DB.schema.dropTable('password_resets');

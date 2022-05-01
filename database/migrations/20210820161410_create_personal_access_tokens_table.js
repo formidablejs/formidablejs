@@ -1,8 +1,8 @@
-const { Knex } = require('knex');
+const { Database } = require('@formidablejs/framework');
 
-/** @param {Knex} knex */
-exports.up = (knex) => {
-	return knex.schema.createTable('personal_access_tokens', (table) => {
+/** @param {Database} DB */
+exports.up = (DB) => {
+	return DB.schema.createTable('personal_access_tokens', (table) => {
 		table.increments('id').primary();
 		table.string('tokenable_type');
 		table.bigInteger('tokenable_id').index().unsigned();
@@ -15,5 +15,5 @@ exports.up = (knex) => {
 	});
 }
 
-/** @param {Knex} knex */
-exports.down = (knex) => knex.schema.dropTable('personal_access_tokens');
+/** @param {Database} DB */
+exports.down = (DB) => DB.schema.dropTable('personal_access_tokens');

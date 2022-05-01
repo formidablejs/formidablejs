@@ -1,8 +1,8 @@
-const { Knex } = require('knex');
+const { Database } = require('@formidablejs/framework');
 
-/** @param {Knex} knex */
-exports.up = (knex) => {
-	return knex.schema.createTable('users', (table) => {
+/** @param {Database} DB */
+exports.up = (DB) => {
+	return DB.schema.createTable('users', (table) => {
 		table.increments('id').primary();
 		table.string('name');
 		table.string('email').unique();
@@ -13,5 +13,5 @@ exports.up = (knex) => {
 	});
 }
 
-/** @param {Knex} knex */
-exports.down = (knex) => knex.schema.dropTable('users');
+/** @param {Database} DB */
+exports.down = (DB) => DB.schema.dropTable('users');
