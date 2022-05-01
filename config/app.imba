@@ -5,7 +5,6 @@ import { CsrfServiceResolver } from '@formidablejs/framework'
 import { CorsServiceResolver } from '@formidablejs/framework'
 import { CookieServiceResolver } from '@formidablejs/framework'
 import { HashServiceResolver } from '@formidablejs/framework'
-import { HelpersServiceResolver } from '@formidablejs/helpers'
 import { LanguageServiceResolver } from '@formidablejs/framework'
 import { MailServiceResolver } from '@formidablejs/mailer'
 import { MultipartServiceResolver } from '@formidablejs/framework'
@@ -112,7 +111,6 @@ export default {
 		SessionMemoryStoreServiceResolver
 		SessionFileStoreServiceResolver
 		SessionServiceResolver
-		HelpersServiceResolver
 		HashServiceResolver
 		LanguageServiceResolver
 		MailServiceResolver
