@@ -8,8 +8,8 @@ exports.up = (DB) => {
 		table.bigInteger('tokenable_id').index().unsigned();
 		table.string('name');
 		table.string('abilities').nullable();
-		table.string('payload').nullable();
-		table.integer('ttl').index().nullable();
+		table.text('payload').nullable();
+		table.bigInteger('ttl').index().unsigned().nullable();
 		table.timestamp('last_used_at').nullable();
 		table.timestamps(true, true);
 	});
