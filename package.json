@@ -12,11 +12,11 @@
 		"test:watch": "jest --roots test --watchAll"
 	},
 	"dependencies": {
-		"@bugsnag/js": "^7.16.2",
-		"@formidablejs/bugsnag-plugin": "^0.0.3",
-		"@formidablejs/framework": "^0.11.10",
-		"@formidablejs/mailer": "^0.3.0",
-		"@formidablejs/stubs": "^0.2.7",
+		"@bugsnag/js": "^7.17.0",
+		"@formidablejs/bugsnag-plugin": "^0.0.4",
+		"@formidablejs/framework": "^0.11.11",
+		"@formidablejs/mailer": "^0.3.1",
+		"@formidablejs/stubs": "^0.2.8",
 		"imba": "^2.0.0-alpha.212",
 		"imba-shell": "^0.4.0",
 		"supertest": "^6.2.4"
