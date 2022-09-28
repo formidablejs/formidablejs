@@ -1,5 +1,5 @@
 ## About Formidable
-Formidable is a Imba Framework for Rapid API Development.
+Formidable is a Imba Framework for Rapid API and Full-Stack Development.
 
 ![Core](https://github.com/formidablejs/framework/actions/workflows/0-core-test.yml/badge.svg)
 ![E2E](https://github.com/formidablejs/framework/actions/workflows/1-e2e-test.yml/badge.svg)
