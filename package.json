@@ -25,5 +25,14 @@
 		"@types/jest": "^29.1.1",
 		"@types/node": "^18.7.15",
 		"jest": "^29.0.2"
+	},
+	"development": {
+		"ignore": [
+			"bootstrap/config",
+			"database",
+			"node_modules",
+			"public",
+			"storage"
+		]
 	}
 }
