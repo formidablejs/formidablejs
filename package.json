@@ -16,7 +16,7 @@
 		"@formidablejs/bugsnag-plugin": "0.0.4",
 		"@formidablejs/framework": "0.12.12",
 		"@formidablejs/mailer": "0.3.1",
-		"@formidablejs/stubs": "0.2.11",
+		"@formidablejs/stubs": "0.2.12",
 		"imba": "2.0.0-alpha.220",
 		"imba-shell": "0.4.0",
 		"supertest": "6.2.4"
