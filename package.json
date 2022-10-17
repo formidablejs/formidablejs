@@ -14,9 +14,10 @@
 	"dependencies": {
 		"@bugsnag/js": "7.18.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
-		"@formidablejs/framework": "0.12.18",
+		"@formidablejs/framework": "0.13.0",
 		"@formidablejs/mailer": "0.3.1",
 		"@formidablejs/stubs": "0.2.14",
+		"@formidablejs/ts-ports": "0.1.1",
 		"imba": "2.0.0-alpha.223",
 		"imba-shell": "0.4.0",
 		"supertest": "6.3.0"
