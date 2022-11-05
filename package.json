@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@bugsnag/js": "7.18.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
-		"@formidablejs/framework": "0.13.1",
+		"@formidablejs/framework": "0.13.2",
 		"@formidablejs/mailer": "0.3.1",
 		"@formidablejs/stubs": "0.2.16",
 		"@formidablejs/ts-ports": "0.1.1",
