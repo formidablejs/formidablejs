@@ -14,7 +14,7 @@
 	"dependencies": {
 		"@bugsnag/js": "7.18.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
-		"@formidablejs/framework": "0.13.2",
+		"@formidablejs/framework": "0.13.3",
 		"@formidablejs/mailer": "0.3.1",
 		"@formidablejs/stubs": "0.2.16",
 		"@formidablejs/ts-ports": "0.1.1",
@@ -23,17 +23,8 @@
 		"supertest": "6.3.1"
 	},
 	"devDependencies": {
-		"@types/jest": "^29.2.0",
-		"@types/node": "^18.11.6",
-		"jest": "^29.2.2"
-	},
-	"development": {
-		"ignore": [
-			"bootstrap/config",
-			"database",
-			"node_modules",
-			"public",
-			"storage"
-		]
+		"@types/jest": "^29.2.2",
+		"@types/node": "^18.11.9",
+		"jest": "^29.3.1"
 	}
 }
