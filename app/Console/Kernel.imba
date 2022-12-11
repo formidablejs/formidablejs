@@ -1,4 +1,5 @@
 import { ConsoleKernel } from '@formidablejs/framework'
+import { Log } from '@formidablejs/logger'
 import type { Schedule } from '@formidablejs/scheduler'
 
 export class Kernel < ConsoleKernel
@@ -10,5 +11,5 @@ export class Kernel < ConsoleKernel
 
 	def schedule schedule\Schedule
 		# schedule.call(do
-		# 	console.log 'Hello World'
+		# 	Log.info 'Hello World'
 		# ).everyMinute!
