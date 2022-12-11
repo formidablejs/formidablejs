@@ -6,11 +6,13 @@ import { CorsServiceResolver } from '@formidablejs/framework'
 import { CookieServiceResolver } from '@formidablejs/framework'
 import { HashServiceResolver } from '@formidablejs/framework'
 import { LanguageServiceResolver } from '@formidablejs/framework'
+import { LoggerServiceResolver } from '@formidablejs/logger'
 import { MailServiceResolver } from '@formidablejs/mailer'
 import { MultipartServiceResolver } from '@formidablejs/framework'
 import { MaintenanceServiceResolver } from '@formidablejs/framework'
 import { PersonalAccessTokenServiceResolver } from '@formidablejs/framework'
 import { RedisServiceResolver } from '@formidablejs/framework'
+import { SchedulerServiceResolver } from '@formidablejs/scheduler'
 import { SessionFileStoreServiceResolver } from '@formidablejs/framework'
 import { SessionMemoryStoreServiceResolver } from '@formidablejs/framework'
 import { SessionServiceResolver } from '@formidablejs/framework'
@@ -105,6 +107,8 @@ export default {
 	resolvers: [
 		# Formidable Framework Service Resolvers...
 		BugsnagServiceResolver
+		SchedulerServiceResolver
+		LoggerServiceResolver
 		RedisServiceResolver
 		MultipartServiceResolver
 		StaticContentServiceResolver
