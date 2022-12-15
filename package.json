@@ -15,7 +15,7 @@
 		"@bugsnag/js": "7.18.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
 		"@formidablejs/framework": "0.13.11",
-		"@formidablejs/logger": "0.0.1",
+		"@formidablejs/logger": "0.1.0",
 		"@formidablejs/mailer": "0.4.0",
 		"@formidablejs/scheduler": "0.0.1",
 		"@formidablejs/stubs": "0.3.1",
