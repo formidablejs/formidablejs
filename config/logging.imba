@@ -69,7 +69,7 @@ export default {
 			level: env('LOG_LEVEL', 'critical')
 		}
 
-		discord {
+		discord: {
 			driver: 'discord'
 			url: env('LOG_DISCORD_WEBHOOK_URL')
 			username: 'Formidable Log'
