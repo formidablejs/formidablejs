@@ -26,7 +26,7 @@ export default {
 		}
 
 		mysql: {
-			driver: 'mysql'
+			driver: 'mysql2'
 			url: helpers.env 'DATABASE_URL'
 			host: helpers.env 'DB_HOST', '127.0.0.1'
 			port: helpers.env 'DB_PORT', '3306'
