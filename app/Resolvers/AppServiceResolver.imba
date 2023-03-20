@@ -9,4 +9,8 @@ export class AppServiceResolver < ServiceResolver
 		# Auth.verificationMailer(VerifyEmail)
 		# Auth.resetPasswordMailer(ResetPassword)
 
+		# Auth.verificationMailerEvents({
+		# 	onError: do(reason) console.error reason
+		# })
+
 		self
