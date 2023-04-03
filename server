@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+/**
+ * This file is the entry point for the server. It is responsible for
+ * starting the server and listening for requests.
+ *
+ * Avoid modifying this file unless you know what you are doing.
+ */
+
+const { Server } = require('@formidablejs/framework')
+
+/**
+ * The .start method will start the server and listen for requests.
+ *
+ * You can pass an object with the following properties:
+ * - port: The port to listen on. Defaults to 3000.
+ * - host: The host to listen on. Defaults to 'localhost'.
+ * - _: A callback function that will be called when the server is ready.
+ * 		This callback will receive an error object as the first argument
+ * 		and the address as the second argument.
+ *
+ * @example
+ * 		// Start the server on port 3000
+ * 		.start({
+ * 			port: 3000,
+ * 			host: 'localhost',
+ * 			_: (err, address) => {
+ * 				if (err) {
+ * 					console.error(err)
+ * 					process.exit(1)
+ * 				}
+ * 				console.log(`Server listening on ${address}`)
+ * 			}
+ * 		})
+ */
+
+Server
+	.use(require('./.formidable/build').default)
+	.start()
