@@ -6,8 +6,9 @@
 	"private": true,
 	"license": "UNLICENSED",
 	"scripts": {
-		"start": "node craftsman serve",
 		"start:dev": "node craftsman serve --dev",
+		"start": "node server",
+		"build": "node craftsman config:cache && imba build bootstrap/build.imba -p -s -f -o .formidable",
 		"test": "jest --roots test",
 		"test:watch": "jest --roots test --watchAll"
 	},
