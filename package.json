@@ -14,10 +14,10 @@
 	"dependencies": {
 		"@bugsnag/js": "7.20.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
-		"@formidablejs/framework": "0.17.4",
+		"@formidablejs/framework": "0.18.0",
 		"@formidablejs/logger": "0.1.0",
 		"@formidablejs/mailer": "0.4.0",
-		"@formidablejs/scheduler": "0.1.0",
+		"@formidablejs/scheduler": "0.1.1",
 		"@formidablejs/stubs": "0.5.0",
 		"@formidablejs/ts-ports": "0.4.3",
 		"imba": "2.0.0-alpha.229",
@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@faker-js/faker": "^7.6.0",
 		"@types/jest": "^29.5.0",
-		"@types/node": "^18.15.9",
+		"@types/node": "^18.15.11",
 		"jest": "^29.5.0"
 	}
 }
