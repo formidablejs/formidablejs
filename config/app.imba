@@ -1,7 +1,6 @@
 import { helpers } from '@formidablejs/framework'
 import { AuthenticationServiceResolver } from '@formidablejs/framework'
 import { BugsnagServiceResolver } from '@formidablejs/bugsnag-plugin'
-import { CsrfServiceResolver } from '@formidablejs/framework'
 import { CorsServiceResolver } from '@formidablejs/framework'
 import { CookieServiceResolver } from '@formidablejs/framework'
 import { HashServiceResolver } from '@formidablejs/framework'
@@ -121,7 +120,6 @@ export default {
 		MailServiceResolver
 		PersonalAccessTokenServiceResolver
 		AuthenticationServiceResolver
-		CsrfServiceResolver
 		CorsServiceResolver
 		MaintenanceServiceResolver
 		TypeScriptPortsServiceResolver

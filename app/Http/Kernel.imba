@@ -1,5 +1,4 @@
 import { Authenticate } from '@formidablejs/framework'
-import { HasCsrfToken } from '@formidablejs/framework'
 import { HasEncryptionKey } from '@formidablejs/framework'
 import { Kernel as HttpKernel } from '@formidablejs/framework'
 import { ValidateSignature } from '@formidablejs/framework'
@@ -30,7 +29,6 @@ export class Kernel < HttpKernel
 			]
 
 			session: [
-				HasCsrfToken
 				VerifyCsrfToken
 			]
 		}
