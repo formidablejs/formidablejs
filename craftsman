@@ -18,7 +18,7 @@ const { Console } = require('@formidablejs/framework');
  * to continuously compile the console application. You can then set "prod"
  * to "true" in the "run" function.
  *
- * @xample
+ * @example
  * 		// Running compiled console application
  * 		Console.make().run({ prod: true });
  */
