@@ -11,6 +11,16 @@ const { Console } = require('@formidablejs/framework');
  * using the "ImbaR" runtime. Both the runtime and console script can be
  * changed by providing the paths to the runtime and console scripts in the
  * "make" function.
+ *
+ * You may notice that running the console application is very slow. This is
+ * because the console application is being compiled on the fly. To speed up
+ * things, you can run the "build" script to pre-compile or "console:watch"
+ * to continuously compile the console application. You can then set "prod"
+ * to "true" in the "run" function.
+ *
+ * @xample
+ * 		// Running compiled console application
+ * 		Console.make().run({ prod: true });
  */
 
-Console.make().run();
+Console.make().run({ prod: false });
