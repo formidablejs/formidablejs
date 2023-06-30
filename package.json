@@ -11,7 +11,6 @@
 		"start": "node server",
 		"build": "node craftsman config:cache && imba build bootstrap/build.imba -p -s -f -o .formidable && imba build bootstrap/console.imba -p -s -f -o .console",
 		"console:watch": "imba build bootstrap/console.imba -p -s -f -w -o .console",
-		"postinstall": "node craftsman config:cache && imba build bootstrap/build.imba -p -s -f -o .formidable && imba build bootstrap/console.imba -p -s -f -o .console",
 		"test": "jest --roots test",
 		"test:watch": "jest --roots test --watchAll"
 	},
