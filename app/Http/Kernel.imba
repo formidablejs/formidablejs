@@ -36,6 +36,7 @@ export class Kernel < HttpKernel
 	get middlewareAliases\MiddlewareAliases
 		{
 			'auth': Authenticate
+			'csrf': VerifyCsrfToken
 			'guest': ErrorIfAuthenticated
 			'lang': AcceptLanguage
 			'signed': ValidateSignature
