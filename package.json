@@ -9,7 +9,7 @@
 		"dev": "node craftsman serve --dev",
 		"serve": "node craftsman serve",
 		"start": "node server",
-		"build": "node craftsman config:cache && imba build bootstrap/build.imba -p -s -f -o .formidable && imba build bootstrap/console.imba -p -s -f -o .console",
+		"build": "imba build bootstrap/build.imba -p -s -f -o .formidable && imba build bootstrap/console.imba -p -s -f -o .console && node craftsman config:cache",
 		"console:watch": "imba build bootstrap/console.imba -p -s -f -w -o .console",
 		"test": "jest --roots test",
 		"test:watch": "jest --roots test --watchAll"
