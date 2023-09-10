@@ -15,7 +15,7 @@ exports.seed = async (DB) => {
 	/** create a random user. */
 	const createRandomUser = () => {
 		return {
-			name: faker.name.fullName(),
+			name: faker.person.fullName(),
 			email: faker.internet.email(),
 			password,
 		};
