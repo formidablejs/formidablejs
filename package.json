@@ -8,16 +8,15 @@
 	"scripts": {
 		"dev": "node craftsman serve --dev",
 		"serve": "node craftsman serve",
-		"start": "node server",
-		"build": "imba build bootstrap/console.imba -p -s -f -o .formidable && imba build bootstrap/build.imba -p -s -f -o .formidable && node craftsman config:cache",
-		"console:watch": "imba build bootstrap/console.imba -p -s -f -w -o .formidable",
+		"start": "internals start",
+		"build": "internals build",
 		"test": "jest --roots test",
 		"test:watch": "jest --roots test --watchAll"
 	},
 	"dependencies": {
 		"@bugsnag/js": "7.20.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
-		"@formidablejs/framework": "0.23.6",
+		"@formidablejs/framework": "0.23.7",
 		"@formidablejs/logger": "0.1.0",
 		"@formidablejs/mailer": "0.4.1",
 		"@formidablejs/scheduler": "0.1.1",
@@ -28,9 +27,9 @@
 		"supertest": "6.3.3"
 	},
 	"devDependencies": {
-		"@faker-js/faker": "^8.0.2",
-		"@types/jest": "^29.5.3",
-		"@types/node": "^20.5.1",
-		"jest": "^29.6.3"
+		"@faker-js/faker": "^8.1.0",
+		"@types/jest": "^29.5.5",
+		"@types/node": "^20.8.3",
+		"jest": "^29.7.0"
 	}
 }
