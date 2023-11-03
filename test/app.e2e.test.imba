@@ -1,21 +1,29 @@
-const { current } = require '../storage/framework/address.json'
-const { SuperTest } = require 'supertest'
-const request = require 'supertest'
+const formidable = require('../.formidable/build').default
+const supertest = require 'supertest'
 
 describe 'Application (e2e)', do
-	# @type {SuperTest}
 	let app
 
-	beforeAll do app = request current
+	beforeAll do
+		const application = await formidable
+
+		app = application.fastify()
+
+		await app.ready()
+
+	afterAll do
+		await app.close()
 
 	it '/ (GET: Hello World)', do
-		app.get('/')
+		supertest(app.server)
+			.get('/')
 			.set('Accept-Language', 'en')
 			.expect(200)
 			.expect('Hello World')
-	
+
 	it '/ (GET: Hola Mundo)', do
-		app.get('/')
+		supertest(app.server)
+			.get('/')
 			.set('Accept-Language', 'es')
 			.expect(200)
 			.expect('Hola Mundo')
