@@ -14,13 +14,18 @@ const { Console } = require('@formidablejs/framework');
  *
  * You may notice that running the console application is very slow. This is
  * because the console application is being compiled on the fly. To speed up
- * things, you can run the "build" script to pre-compile or "console:watch"
- * to continuously compile the console application. You can then set "prod"
- * to "true" in the "run" function.
+ * things, you can run the "build" script to pre-compile. You can then set
+ * "prod" to "true" in the "run" function.
  *
  * @example
  * 		// Running compiled console application
  * 		Console.make().run({ prod: true });
+ *
+ * 		// You may also use Console.mode(['production'])
+ * 		Console.make().run({ prod: Console.mode(['production']) });
+ *
+ * 		// You may then pass the "--MODE=production" flag when running the console
+ * 		$ node craftsman --MODE=production
  */
 
 Console.make().run({ prod: false });
