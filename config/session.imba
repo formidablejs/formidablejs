@@ -14,7 +14,7 @@ export default {
 	#
 	# See: "config > app.imba > resolvers"
 
-	driver: 'file'
+	driver: helpers.env 'SESSION_DRIVER', 'file'
 
 	# --------------------------------------------------------------------------
 	# Session Cookie Name
