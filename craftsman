@@ -18,14 +18,9 @@ const { Console } = require('@formidablejs/framework');
  * "prod" to "true" in the "run" function.
  *
  * @example
- * 		// Running compiled console application
- * 		Console.make().run({ prod: true });
- *
- * 		// You may also use Console.mode(['production'])
- * 		Console.make().run({ prod: Console.mode(['production']) });
- *
- * 		// You may then pass the "--MODE=production" flag when running the console
+ * 		# When running compiled console application You may then pass
+ * 		# the "--MODE=production" flag.
  * 		$ node craftsman --MODE=production
  */
 
-Console.make().run({ prod: false });
+Console.make().run({ prod: Console.mode(['production']) });
