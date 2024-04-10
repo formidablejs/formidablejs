@@ -20,7 +20,7 @@
 		"@formidablejs/logger": "0.1.1",
 		"@formidablejs/mailer": "0.4.2",
 		"@formidablejs/queues": "^0.0.5",
-		"@formidablejs/scheduler": "0.1.1",
+		"@formidablejs/scheduler": "0.2.0",
 		"@formidablejs/stubs": "0.5.2",
 		"@formidablejs/ts-ports": "0.4.4",
 		"imba": "2.0.0-alpha.235",
