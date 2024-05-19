@@ -12,7 +12,7 @@ export default {
 	#
 	# Supported: "memory", "file", "redis"
 	#
-	# See: "config > app.imba > resolvers"
+	# See: "bootstrap > resolvers.imba"
 
 	driver: helpers.env 'SESSION_DRIVER', 'file'
 
