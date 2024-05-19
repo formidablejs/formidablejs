@@ -16,10 +16,10 @@
 	"dependencies": {
 		"@bugsnag/js": "7.20.0",
 		"@formidablejs/bugsnag-plugin": "0.0.5",
-		"@formidablejs/framework": "0.26.2",
+		"@formidablejs/framework": "0.27.0",
 		"@formidablejs/logger": "0.1.1",
 		"@formidablejs/mailer": "0.4.2",
-		"@formidablejs/queues": "^0.0.5",
+		"@formidablejs/queues": "^0.0.7",
 		"@formidablejs/scheduler": "0.2.2",
 		"@formidablejs/stubs": "0.5.2",
 		"@formidablejs/ts-ports": "0.4.4",
