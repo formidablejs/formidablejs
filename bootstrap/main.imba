@@ -15,6 +15,6 @@ app
 	.bind(Language, Language)
 	.bind(ExceptionHandler, Handler)
 	.bind(ConsoleKernel, AppConsole)
-	.prepare!
+	.prepare(require('./resolvers'))
 
 export { app }
