@@ -1,5 +1,3 @@
-import { helpers } from '@formidablejs/framework'
-
 export default {
 
 	# --------------------------------------------------------------------------
@@ -19,7 +17,7 @@ export default {
 	allowed_methods: ['*']
 
 	# Matches the request origin. '['*']' allows all origins. Wildcards can be used, eg `*.mydomain.com`
-	allowed_origins: [ helpers.env('CLIENT_URL', '*') ]
+	allowed_origins: [ env('CLIENT_URL', '*') ]
 
 	# Sets the Access-Control-Allow-Headers response header. `['*']` allows all headers.
 	allowed_headers: ['*']

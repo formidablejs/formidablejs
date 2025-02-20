@@ -1,5 +1,3 @@
-import { helpers } from '@formidablejs/framework'
-
 export default {
 
 	# --------------------------------------------------------------------------
@@ -21,7 +19,7 @@ export default {
 	# control the amount of time it takes to hash the given password.
 
 	bcrypt: {
-		rounds: helpers.env 'BCRYPT_ROUNDS', 10
+		rounds: env 'BCRYPT_ROUNDS', 10
 	}
 
 	# --------------------------------------------------------------------------
@@ -33,9 +31,9 @@ export default {
 	# control the amount of time it takes to hash the given password.
 
 	argon2: {
-		memoryCost: helpers.env 'ARGON2_MEMORY', 1024
-		parallelism: helpers.env 'ARGON2_THREADS', 1
-		timeCost: helpers.env 'ARGON2_TIME', 2
+		memoryCost: env 'ARGON2_MEMORY', 1024
+		parallelism: env 'ARGON2_THREADS', 1
+		timeCost: env 'ARGON2_TIME', 2
 	}
 
 }

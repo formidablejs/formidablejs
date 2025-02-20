@@ -1,5 +1,3 @@
-import { env } from '@formidablejs/framework'
-
 export default {
 	# --------------------------------------------------------------------------
 	#  Default Log Channel
