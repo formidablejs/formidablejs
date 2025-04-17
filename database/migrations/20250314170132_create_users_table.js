@@ -1,7 +1,7 @@
 const { Database } = require('@formidablejs/framework');
 
 /** @param {Database} DB */
-exports.up = ({ schema }) => {
+exports.up = ({ schema, fn }) => {
 	schema.createTable('users', (table) => {
 		table.increments('id').primary();
 		table.string('name');
