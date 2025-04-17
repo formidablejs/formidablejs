@@ -1,10 +1,9 @@
 const { Factory, Hash } = require('@formidablejs/framework');
 
 exports.UserFactory = class UserFactory extends Factory {
-    constructor() {
-        super();
-        this.password = undefined;
-    }
+    get password() {
+		return undefined;
+	}
 
     async definition() {
         return {
