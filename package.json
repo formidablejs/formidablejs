@@ -22,9 +22,9 @@
 		"@formidablejs/queues": "^0.0.8",
 		"@formidablejs/scheduler": "0.2.2",
 		"@formidablejs/stubs": "0.6.0",
-		"@formidablejs/ts-ports": "0.4.5",
+		"@formidablejs/ts-ports": "0.4.6",
 		"imba": "2.0.0-alpha.245",
-		"imba-shell": "0.5.2",
+		"imba-shell": "0.5.3",
 		"supertest": "7.1.0"
 	},
 	"devDependencies": {
