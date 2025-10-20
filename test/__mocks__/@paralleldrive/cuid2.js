@@ -1,4 +1,4 @@
-//Mock for @paralleldrive/cuid2
+// Mock for @paralleldrive/cuid2
 
 module.exports = {
     createId: jest.fn(() => 'mock-id'),
